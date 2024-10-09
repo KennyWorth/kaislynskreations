@@ -1,0 +1,8 @@
+{
+    "/": {
+      "target": "https://kennyworth.github.io",
+      "secure": false,
+      "changeOrigin": true
+    }
+  }
+  

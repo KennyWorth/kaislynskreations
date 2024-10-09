@@ -1,0 +1,121 @@
+.spacer {
+    width: 78vw;
+  }
+  
+  .icon {
+    margin-right: 2vw;
+  }
+
+  .example-container {
+    width: 500px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+
+  .menu-button:hover {
+    background-color: #04c9d0;
+    cursor: pointer;
+  }
+
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 20vw;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+  }
+
+  .close-icon {
+    position: absolute;
+    z-index: 2;
+    top: .5vh;
+    left: 15vw;
+    color: red;
+  }
+
+  .contact-button {
+    background-color: #d084cd;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 6vw;
+    height: 4vh;
+  }
+
+  .contact-button:hover {
+    background-color: #04c9d0;
+  }
+
+  .logo-text {
+    font-size: 2em;
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  @media screen and (max-width: 600px) {
+    .spacer {
+      width: 100vw;
+    }
+
+    .contact-button {
+      width: 20vw;
+    }
+
+    .icon {
+      margin-right: 1vw;
+    }
+
+    .logo {
+      margin: 0%;
+    }
+
+    .close-icon {
+      left: 85vw;
+    }
+
+    .backdrop {
+      height: 0;
+      width: 0;
+      top: 0;
+      left: 0;
+    }
+
+    .example-container {
+      width: 100%;
+    }
+
+    .example-sidenav {
+      padding: 10px;
+    }
+
+    .example-sidenav-content {
+      padding: 10px;
+    }
+
+    .contact-button {
+      width: 30vw;
+      height: 5vh;
+    }
+
+    .contact-button:hover {
+      background-color: #04c9d0;
+    }
+
+    .logo-text {
+      font-size: .8em;
+      text-decoration: none;
+    }
+  }

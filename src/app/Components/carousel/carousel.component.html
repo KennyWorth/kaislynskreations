@@ -1,0 +1,13 @@
+<div *ngIf="!mobileQuery.matches" id="carouselExample" class="carousel" data-ride="carousel">
+    <mat-icon class="carousel-control" (click)="decrementSlide()">arrow_left</mat-icon>
+    <app-carousel-card [isActive]="false" [slide]="slides[(activeSlide - 1 + slides.length) % slides.length]"></app-carousel-card>
+    <app-carousel-card [isActive]="true" [slide]="slides[activeSlide]"></app-carousel-card>
+    <app-carousel-card [isActive]="false" [slide]="slides[(activeSlide + 1) % slides.length]"></app-carousel-card>
+    <mat-icon class="carousel-control" (click)="incrementSlide()">arrow_right</mat-icon>
+</div>
+
+<div *ngIf="mobileQuery.matches" id="carouselExample" class="carousel" data-ride="carousel">
+    <mat-icon class="carousel-control" (click)="decrementSlide()">arrow_left</mat-icon>
+    <app-carousel-card [isActive]="true" [slide]="slides[activeSlide]"></app-carousel-card>
+    <mat-icon class="carousel-control" (click)="incrementSlide()">arrow_right</mat-icon>
+</div>

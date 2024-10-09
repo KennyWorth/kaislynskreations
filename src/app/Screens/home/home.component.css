@@ -1,0 +1,75 @@
+/* styles.css */
+
+.container {
+    padding: 20px;
+  }
+  
+  .jumbotron {
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: rgb(3, 191, 160);
+    text-align: center;
+    font-size: 2em;
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+  }
+
+  .order-button {
+    background-color: rgb(3, 191, 160);
+    color: rgb(65, 34, 202);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  @media (max-width: 767px) {
+    .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
+  .background-image {
+    background-image: url('../../../assets/main-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+  }
+
+  @media screen and (max-width: 600px){
+    .background-image {
+      height: 50vh;
+    }
+
+    .jumbotron {
+      font-size: 1.5em;
+    }
+
+    .container {
+      padding: 10px;
+    }
+
+    .col-md-4 {
+      margin-bottom: 20px;
+    }
+    
+  }
+  
